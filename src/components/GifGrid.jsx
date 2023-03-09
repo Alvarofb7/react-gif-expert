@@ -9,7 +9,7 @@ export const GifGrid = ({ category }) => {
 
     return (
         <>
-            <h4>{category}</h4>
+            <h3>{category}</h3>
             {
                 // isLoading ? (<h2>Cargando...</h2>): null
                 isLoading && (<h2>Cargando...</h2>)
