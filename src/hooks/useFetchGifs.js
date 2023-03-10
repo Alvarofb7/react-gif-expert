@@ -9,14 +9,13 @@ export const useFetchGifs = (category) => {
     const getImages = async () => {
         const newImages = await getGifs(category);
         setImages(newImages);
+        setIsLoading(false);
     }
 
     useEffect(() => {
         // getGifs(category)
         //     .then(newImages => setImages(newImages));
-
         getImages();
-        setIsLoading(false);
     }, [])
 
     return {
