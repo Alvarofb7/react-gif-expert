@@ -23,9 +23,7 @@ exports[`Pruebas de <GifExpertApp /> Debe de aparecer la nueva categoria en pant
   <div
     class="card-grid"
   />
-  <h3>
-    Futbol
-  </h3>
+  <h3 />
   <h2>
     Cargando...
   </h2>
