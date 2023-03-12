@@ -3,8 +3,6 @@ import { getGifs } from "../helpers/getGifts";
 
 export const useFetchGifs = (category) => {
 
-    console.log(`Haciendo fetch de la categoria ${category}`);
-
     const [images, setImages] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
     
@@ -12,7 +10,6 @@ export const useFetchGifs = (category) => {
         const newImages = await getGifs(category);
         setImages(newImages);
         setIsLoading(false);
-        console.log(`Obteniendo imagenes de la categoria ${category}`);
     }
 
     useEffect(() => {
